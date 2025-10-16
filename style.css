@@ -99,3 +99,51 @@ footer {
   color: #fff;
   margin-top: auto;
 }
+
+/* Hero / Header */
+header {
+  padding: 80px 20px;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* Tambahkan overlay biar teks lebih jelas */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+header h1, header p, header .btn {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+header .btn {
+  display: inline-block;
+  background: #ffd700;
+  color: #000;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+header .btn:hover {
+  background: #ffcc00;
+}
